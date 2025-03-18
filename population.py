@@ -11,7 +11,7 @@ def read_parquet(path, folder = "logo_image"):
         logo_url = get_company_logo(el)
 
         if logo_url:
-            filename = os.path.join(folder, f"{el.replace('.', '_')}.png")  # Replace dots in filename
+            filename = os.path.join(folder, f"{el.replace('.', '_')}.png")  
             try:
                 urllib.request.urlretrieve(logo_url, filename)
                 print(f"Downloaded: {filename}")
@@ -27,7 +27,7 @@ def get_company_logo(domain):
     response = requests.get(url)
     
     if response.status_code == 200:
-        return url  # Returns the direct logo URL
+        return url  
     else:
         return None
     
