@@ -29,7 +29,7 @@ First, I analyzed the logos and noticed that they come in various shapes and siz
 Many logos also contain the company name, so I aimed to extract as many letters as possible from the text. This gave me three classification criteria: color composition, color percentage, and text recognition. If two logos matched in at least two of these criteria, I considered them similar.
 I initially thought about using the company name as an additional criterion, but it felt like cheating, so I abandoned that idea.
 
-##🚀 Getting Started
+## 🚀 Getting Started
 # Prerequisites
 Ensure you have the following installed:
 - Python 3.x
