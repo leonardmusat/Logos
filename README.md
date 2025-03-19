@@ -30,7 +30,7 @@ Many logos also contain the company name, so I aimed to extract as many letters 
 I initially thought about using the company name as an additional criterion, but it felt like cheating, so I abandoned that idea.
 
 ## 🚀 Getting Started
-# Prerequisites
+### Prerequisites
 Ensure you have the following installed:
 - Python 3.x
 - pandas, requests, urllib, pillow, tesseract-ocr
