@@ -11,26 +11,28 @@ Output: Categories with similar logos -> one folder for each category.
 - 🐍 population.py
   - ✅ downloads images logo using Clearbit Logo API
   - ✅ store all the images in a specifc folder
+  - ⚙️ asummes that all registration from .parquet file are domain names
+  - ⚙️ constructs a request URL for each domain using Clearbit’s API.
+  - ⚙️ if the API response is 200 (OK), downloads and saves the logo image.
+  - 🔨 success rate: ~66-67% of logos successfully downloaded.
 - 🐍 classification.py
-  - ✅ Extracts dominant colors and their percentages from images  
-  - ✅ Detects text from logos using OCR (Tesseract)  
+  - ✅ Extracts dominant colors and their percentages from images (⚙️ HSV convertion) 
+  - ✅ Detects text from logos using OCR (⚙️ Tesseract)  
   - ✅ Compares images based on:  
-    - Color similarity (within a defined tolerance)  
-    - Text matches  
-    - Percentage difference in colors (within a defined tolerance)
+    - ⚙️ Color similarity (within a defined tolerance)  
+    - ⚙️ Text matches  
+    - ⚙️ Percentage difference in colors (within a defined tolerance)
   - ✅ Groups similar logos into categorized folders
 
-## ⚙️ How It Works  
-1. Population.py: Assumtion: every registration from the .parquet file represents the domain of the specifc company.
-- For every line of the .parquet file a specific url is built wehere a request of type get is applied, if the request send back "200" in the next step the logo is downloaded.
-- Logos Downloaded: 66-67%
-2. Classification.py
-- Loads images from the folder they were downloaded   
-- Compares logos based on:  
-   - 🎨 Color similarity (within a defined tolerance) - converting images to a HSV 
-   - 🔠 Text matches - using Tesseract OCR
-   - 📊 Percentage difference in colors (within a defined tolerance) - converting images to a HSV
-- Groups similar logos into separate folders
-
 ## 🧠 The ideas:
-First of all I took a look to at the logos, them come in different forms and sizes so I tought that working with percentage of the colors would be a good idea. Also similar logos had the same colors or the same shapes so I decided to work with colors and percentage but as different criteria. Many times in the logo appears the name of the company and I decided to read as mush as I can that letters. Like that I got three citeria for clasification and if two logos check at least 2, I consider them similar.
+First, I analyzed the logos and noticed that they come in various shapes and sizes. I thought that using the percentage of colors in each logo would be a good approach. Additionally, similar logos often shared the same colors or shapes, so I decided to consider both color composition and percentage as separate criteria.
+Many logos also contain the company name, so I aimed to extract as many letters as possible from the text. This gave me three classification criteria: color composition, color percentage, and text recognition. If two logos matched in at least two of these criteria, I considered them similar.
+I initially thought about using the company name as an additional criterion, but it felt like cheating, so I abandoned that idea.
+
+🚀 Getting Started
+# Prerequisites
+Ensure you have the following installed:
+- Python 3.x
+- pandas, requests, urllib, pillow, tesseract-ocr
+
+In the classification.py edit the path for tesseract.exe acoring to your environment.
