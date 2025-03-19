@@ -37,7 +37,7 @@ Ensure you have the following installed:
 - pandas, requests, urllib, pillow, tesseract-ocr  
 <p> In the classification.py edit the path for tesseract.exe acording to your environment. </p>
 
-1. Open cmd in the folder you pulled the code and aditional files
+<p> 1. Open cmd in the folder you pulled the code and aditional files </p>
 2. execute "python population.py" to get all the logos in a file
 3. execute "python classification.py" to get them classified
 
