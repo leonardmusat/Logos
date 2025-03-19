@@ -34,7 +34,7 @@ I initially thought about using the company name as an additional criterion, but
 ### Prerequisites
 Ensure you have the following installed:
 - Python 3.x
-- pandas, requests, urllib, pillow, tesseract-ocr.
+- pandas, requests, urllib, pillow, tesseract-ocr. <br>
 In the classification.py edit the path for tesseract.exe acording to your environment.
 
 1. Open cmd in the folder you pulled the code and aditional files
