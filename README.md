@@ -35,7 +35,7 @@ I initially thought about using the company name as an additional criterion, but
 Ensure you have the following installed:
 - Python 3.x
 - pandas, requests, urllib, pillow, tesseract-ocr  
-In the classification.py edit the path for tesseract.exe acording to your environment.
+<p> In the classification.py edit the path for tesseract.exe acording to your environment. </p>
 
 1. Open cmd in the folder you pulled the code and aditional files
 2. execute "python population.py" to get all the logos in a file
