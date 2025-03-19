@@ -30,9 +30,15 @@ Many logos also contain the company name, so I aimed to extract as many letters 
 I initially thought about using the company name as an additional criterion, but it felt like cheating, so I abandoned that idea.
 
 ## 🚀 Getting Started
+❗ The repository reflects the state after code execution. Before running the code, delete the contents of the logo_image and final_results folders.
 ### Prerequisites
 Ensure you have the following installed:
 - Python 3.x
 - pandas, requests, urllib, pillow, tesseract-ocr
+In the classification.py edit the path for tesseract.exe acording to your environment.
 
-In the classification.py edit the path for tesseract.exe acoring to your environment.
+1. Open cmd in the folder you pulled the code and aditional files
+2. execute "python population.py" to get all the logos in a file
+3. execute "python classification.py" to get them classified
+
+
