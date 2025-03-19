@@ -25,9 +25,9 @@ Output: Categories with similar logos -> one folder for each category.
   - ✅ Groups similar logos into categorized folders
 
 ## 🧠 The ideas:
-First, I analyzed the logos and noticed that they come in various shapes and sizes. I thought that using the percentage of colors in each logo would be a good approach. Additionally, similar logos often shared the same colors or shapes, so I decided to consider both color composition and percentage as separate criteria.
-Many logos also contain the company name, so I aimed to extract as many letters as possible from the text. This gave me three classification criteria: color composition, color percentage, and text recognition. If two logos matched in at least two of these criteria, I considered them similar.
-I initially thought about using the company name as an additional criterion, but it felt like cheating, so I abandoned that idea.
+First, I analyzed the logos and noticed that they come in various shapes and sizes. I thought that using the percentage of colors in each logo would be a good approach. Additionally, similar logos often shared the same colors or shapes, so I decided to consider both color composition and percentage as separate criteria. <br>
+Many logos also contain the company name, so I aimed to extract as many letters as possible from the text. This gave me three classification criteria: color composition, color percentage, and text recognition. If two logos matched in at least two of these criteria, I considered them similar. <br>
+I initially thought about using the company name as an additional criterion, but it felt like cheating, so I abandoned that idea. <br>
 
 ## 🚀 Getting Started
 ❗ The repository reflects the state after code execution. Before running the code, delete the contents of the logo_image and final_results folders.
